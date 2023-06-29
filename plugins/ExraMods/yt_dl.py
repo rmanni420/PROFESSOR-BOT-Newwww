@@ -4,10 +4,6 @@ import os, requests, asyncio, math, time, wget
 from pyrogram import filters, Client
 from pyrogram.types import Message
 
-from youtube_search import YoutubeSearch
-from youtubesearchpython import SearchVideos
-from yt_dlp import YoutubeDL
-
 
 @Client.on_message(filters.command(['song', 'mp3']) & filters.private)
 async def song(client, message):
